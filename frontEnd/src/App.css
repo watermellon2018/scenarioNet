@@ -25,6 +25,23 @@
 
 }
 
+
+.item-middle-menu .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  flex: 1;
+  -webkit-flex: 1; /* Safari */
+  -ms-flex: 1; /* IE 10 */
+  height: -webkit-fill-available;
+  max-height: 30%;
+}
+
+.item-middle-menu .wrap .MuiSvgIcon-root{
+  font-size: 10.1875rem;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
