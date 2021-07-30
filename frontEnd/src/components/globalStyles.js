@@ -10,5 +10,25 @@ export const GlobalStyles = createGlobalStyle`
         color: ${({ theme }) => theme.text};
         border-color: ${({ theme }) => theme.cardBorderColor};
     }
+    .MuiInputLabel-outlined {
+        color: ${({ theme }) => theme.colorLabelInput} !important;
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+        border-color: ${({ theme }) => theme.colorLabelInput} !important;
+    }
+
+    .MuiIconButton-label {
+        color: ${({ theme }) => theme.backgroundIcon}
+    }
+
+
+  }
+  input, select, textarea {
+      color: ${({ theme }) => theme.text} !important;
+
+  }
+  textarea:focus, input:focus {
+    color: ${({ theme }) => theme.text} !important;
   }
   `
