@@ -10,6 +10,7 @@ export const lightTheme = {
     textInput: '#3f51b5',
     colorLabelInput: '#3f51b5',
     textFieldBorder: '#3f51b5',
+    thirdColor: '#3f51b5',
 
 }
 export const darkTheme = {
@@ -24,4 +25,5 @@ export const darkTheme = {
     textInput: '#6B8096',
     colorLabelInput: '#f24958',
     textFieldBorder: '#f24958',
+    thirdColor: '#f24958',
 }

@@ -95,7 +95,7 @@ const MainPage = () => {
                 closeDialog={closeRegistrationDialog}
                 title="Регистрация"
                 okTitle="Зарегистрироваться"
-                handleCancel={closeLoginDialog}
+                handleCancel={closeRegistrationDialog}
                 handleOk={handleRegistation}
             >
 

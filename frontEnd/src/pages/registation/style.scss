@@ -1,0 +1,30 @@
+
+.registration {
+    &__first-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        &__avatar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &__wrapper-div {
+                width: 65%;
+                height: 90%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px dashed;
+            }
+        }
+    }
+
+    &__second-row {
+        display: flex;
+    }
+
+    &__third-row{
+        display: flex;
+    }
+}

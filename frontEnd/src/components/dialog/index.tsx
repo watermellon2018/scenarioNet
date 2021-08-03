@@ -2,8 +2,6 @@ import React, { FC } from 'react';
 import { Dialog, Button, DialogTitle, Paper, DialogContent, DialogActions } from '@material-ui/core';
 import Draggable from 'react-draggable';
 
-import { makeStyles } from '@material-ui/core/styles';
-
 interface WDialogI {
     isOpen?: boolean;
     closeDialog?: () => void;

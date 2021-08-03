@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { IconButton, TextField, Avatar, InputAdornment, InputLabel, FormControl, OutlinedInput, Button } from '@material-ui/core';
+import { IconButton, TextField, 
+    InputAdornment, InputLabel,
+    FormControl, OutlinedInput, } from '@material-ui/core';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
+import PhotoCamera from '@material-ui/icons/PhotoCamera';
+
 
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
+import './style.scss';
 
 
 const RegistationDialog = () => {
@@ -27,7 +32,7 @@ const RegistationDialog = () => {
 
     return (
         <>
-            <div style={{ display: 'flex' }}>
+            <div className='registration__first-row'>
 
 
                 <div>
@@ -61,31 +66,27 @@ const RegistationDialog = () => {
 
 
 
+                <div className='registration__first-row__avatar'>
+                    <div className='registration__first-row__avatar__wrapper-div'>
+                    <input accept="image/*" style={{display: 'none'}} id="icon-button-file" type="file" />
+                    <label style={{height: 'fit-content'}} htmlFor="icon-button-file">
+                        <IconButton color="primary" aria-label="upload picture" component="span">
+                            <PhotoCamera />
+                        </IconButton>
+                    </label>
+                    </div>
+                </div>
 
-
-                <label htmlFor="upload-photo">
-                    <input
-                        style={{ display: 'none' }}
-                        id="upload-photo"
-                        name="upload-photo"
-                        type="file"
-                    />
-
-                    <Button color="secondary" variant="contained" component="span">
-                        Upload button
-                    </Button>
-                </label>
 
 
 
             </div>
-
+            
             <div>
                 <FormControl
                     className={clsx(classes.margin, classes.textField)}
                     size='small'
                     fullWidth={true}
-
                 >
                     <TextField
                         autoComplete='off'
@@ -93,7 +94,6 @@ const RegistationDialog = () => {
                         label="Дата рождения"
                         type="date"
                         defaultValue="2017-05-24"
-                        // className={classes.textField}
                         InputLabelProps={{
                             shrink: true,
                         }}
@@ -101,7 +101,7 @@ const RegistationDialog = () => {
                 </FormControl>
             </div>
 
-            <div style={{ display: 'flex' }}>
+            <div className='registration__second-row'>
                 <FormControl
                     className={clsx(classes.margin, classes.textField)}
                     size='small'
@@ -131,8 +131,13 @@ const RegistationDialog = () => {
 
 
 
-            <div style={{ display: 'flex' }}>
-                <FormControl className={clsx(classes.margin, classes.textField)} size='small' required variant="outlined">
+            <div className='registration__third-row'>
+                <FormControl 
+                    className={clsx(classes.margin, classes.textField)} 
+                    size='small' 
+                    required 
+                    variant="outlined"
+                >
                     <InputLabel htmlFor="password">Пароль</InputLabel>
                     <OutlinedInput
                         label='Пароль*'
