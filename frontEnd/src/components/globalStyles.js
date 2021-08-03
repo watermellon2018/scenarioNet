@@ -11,7 +11,7 @@ export const GlobalStyles = createGlobalStyle`
         border-color: ${({ theme }) => theme.cardBorderColor};
     }
     .MuiInputLabel-outlined {
-        color: ${({ theme }) => theme.colorLabelInput} !important;
+        color: ${({ theme }) => theme.text} !important;
     }
 
     .MuiOutlinedInput-notchedOutline {
@@ -20,6 +20,25 @@ export const GlobalStyles = createGlobalStyle`
 
     .MuiIconButton-label {
         color: ${({ theme }) => theme.backgroundIcon}
+    }
+    
+    .MuiInputLabel-formControl, .Mui-focused {
+        color: ${({ theme }) => theme.text} !important;
+    }
+
+    .MuiInput-input {
+        color: ${({ theme }) => theme.text} !important;
+        border-bottom: 1px solid ${({ theme }) => theme.textFieldBorder} !important;
+    }
+
+
+    .MuiInput-underline:after {
+        border-bottom: 1px solid ${({ theme }) => theme.textFieldBorder} !important;
+    }
+
+    .MuiInput-input:after {
+        color: white !important;
+        background: white !important;
     }
 
 

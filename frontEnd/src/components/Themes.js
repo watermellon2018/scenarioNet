@@ -9,6 +9,8 @@ export const lightTheme = {
     cardBorderColor: '#3f51b5',
     textInput: '#3f51b5',
     colorLabelInput: '#3f51b5',
+    textFieldBorder: '#3f51b5',
+
 }
 export const darkTheme = {
     // body: '#363537',
@@ -21,4 +23,5 @@ export const darkTheme = {
     cardBorderColor: '#f24958',
     textInput: '#6B8096',
     colorLabelInput: '#f24958',
+    textFieldBorder: '#f24958',
 }
