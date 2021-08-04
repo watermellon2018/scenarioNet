@@ -31,7 +31,7 @@ const RegistationDialog = () => {
     const classes = useStyles();
 
     return (
-        <>
+        <div className='registation'>
             <div className='registration__first-row'>
 
 
@@ -180,7 +180,7 @@ const RegistationDialog = () => {
             </div>
 
 
-        </>
+        </div>
     )
 
 }

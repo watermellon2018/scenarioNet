@@ -50,6 +50,7 @@ const MainPage = () => {
 
 
         <>
+
             <div className='middle-menu'>
 
                 <div className='item-middle-menu'>

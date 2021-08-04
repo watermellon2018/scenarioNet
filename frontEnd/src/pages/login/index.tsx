@@ -26,7 +26,7 @@ const Login = () => {
       const classes = useStyles();
 
     return (
-        <>
+        <div className='login'>
            
                 <div>
                     <FormControl className={clsx(classes.margin, classes.textField)} size='small' fullWidth={true} required variant="outlined">
@@ -58,7 +58,7 @@ const Login = () => {
                 </div>
 
         
-        </>
+        </div>
     )
 
 }

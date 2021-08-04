@@ -1,0 +1,29 @@
+.wbutton__wrap {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%; //40px;
+    flex: 1;
+    -webkit-flex: 1; /* Safari */
+    -ms-flex: 1; /* IE 10 */
+    max-height: 80%;  
+    justify-content: center;
+      
+    & .MuiSvgIcon-root{
+      font-size: 9vw;// 10vw // 10.1875rem;
+    }
+
+    & .MuiButton-label{
+        font-size: 15px; // 3vw;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    .wbutton__wrap {
+        & .MuiButton-label{
+            font-size: 4vw;
+        }
+    }
+}

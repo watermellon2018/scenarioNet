@@ -21,9 +21,9 @@ export const darkTheme = {
     toggleBorder: '#6B8096',
     background: '#999',
     cardBackground: '#272727',
-    cardBorderColor: '#f24958',
+    cardBorderColor: '#f2bf49f2', // '#f24958',
     textInput: '#6B8096',
-    colorLabelInput: '#f24958',
-    textFieldBorder: '#f24958',
-    thirdColor: '#f24958',
+    colorLabelInput: '#f2bf49f2', // '#f24958',
+    textFieldBorder: '#f2bf49f2', // '#f24958',
+    thirdColor: '#f2bf49f2', // '#f24958',
 }

@@ -7,7 +7,18 @@ export const GlobalStyles = createGlobalStyle`
     transition: all 0.50s linear;
     .registration__first-row__avatar__wrapper-div {
         border-color: ${({ theme }) => theme.thirdColor};
+    }
 
+    .registation .MuiSvgIcon-root {
+        color: ${({ theme }) => theme.text} !important;
+    }
+
+    .login .MuiSvgIcon-root {
+        color: ${({ theme }) => theme.text} !important;
+    }
+
+    .MuiSvgIcon-root {
+        color: ${({ theme }) => theme.textFieldBorder};
     }
 
     .MuiPaper-root {
@@ -23,9 +34,7 @@ export const GlobalStyles = createGlobalStyle`
         border-color: ${({ theme }) => theme.colorLabelInput} !important;
     }
 
-    .MuiIconButton-label {
-        color: ${({ theme }) => theme.backgroundIcon}
-    }
+    
     
     .MuiInputLabel-formControl, .Mui-focused {
         color: ${({ theme }) => theme.text} !important;

@@ -9,6 +9,7 @@ import {
   Route,
 } from "react-router-dom";
 import MainPage from './pages/main';
+import MenuPage from './pages/menu';
 
 
 function App() {
@@ -39,6 +40,10 @@ function App() {
 
           <Route path='/find-movie'>
             <div>hi</div>
+          </Route>
+
+          <Route path='/menu'>
+            <MenuPage />
           </Route>
 
           <Route path='/registration'>
