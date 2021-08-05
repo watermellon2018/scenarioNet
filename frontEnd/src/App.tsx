@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import MainPage from './pages/main';
 import MenuPage from './pages/menu';
+import CreateScenarioPage from './pages/createScenario';
 
 
 function App() {
@@ -44,6 +45,10 @@ function App() {
 
           <Route path='/menu'>
             <MenuPage />
+          </Route>
+
+          <Route path='/create-scenario'>
+            <CreateScenarioPage />
           </Route>
 
           <Route path='/registration'>
