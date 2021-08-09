@@ -14,11 +14,12 @@ import WButtonGroup from '../../components/groupButton';
 
 const MenuPage = () => {
 
+    const history = useHistory();
     
 
 
-    const handleRegistation = () => {
-        // history.push('/registration');
+    const handleProfile = () => {
+        history.push('/my-profile');
     }
 
     return (
@@ -34,7 +35,11 @@ const MenuPage = () => {
 
             <WButton icon={<VideoLibraryIcon />} title='Моя библиотека' />
 
-            <WButton icon={<PersonIcon color='primary' />} title='Мой профиль' />
+            <WButton 
+                icon={<PersonIcon color='primary' />} 
+                title='Мой профиль' 
+                onClick={handleProfile}
+            />
 
             <WButton icon={<HelpOutlineIcon />} title='Тут что-то будет' />          
 

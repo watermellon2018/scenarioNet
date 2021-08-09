@@ -11,6 +11,7 @@ import {
 import MainPage from './pages/main';
 import MenuPage from './pages/menu';
 import CreateScenarioPage from './pages/createScenario';
+import MyProfilePage from './pages/profile';
 
 
 function App() {
@@ -57,6 +58,10 @@ function App() {
 
           <Route path='/login'>
             <div>Login</div>
+          </Route>
+
+          <Route path='/my-profile'>
+            <MyProfilePage />
           </Route>
         </div>
       </>
