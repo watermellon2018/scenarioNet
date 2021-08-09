@@ -12,6 +12,7 @@ import MainPage from './pages/main';
 import MenuPage from './pages/menu';
 import CreateScenarioPage from './pages/createScenario';
 import MyProfilePage from './pages/profile';
+import CreateCharacterPage from './pages/createCharacter';
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
             />
 
           </div>
+          <div style={{height: 'calc(100% - 40px - 10px - 10px)', padding: '0px 10px 5px 10px'}}>
 
           <Route path='/main'>
             <MainPage />
@@ -52,17 +54,15 @@ function App() {
             <CreateScenarioPage />
           </Route>
 
-          <Route path='/registration'>
-            <div>Hello</div>
-          </Route>
-
-          <Route path='/login'>
-            <div>Login</div>
+          <Route path='/create-character'>
+            <CreateCharacterPage />
           </Route>
 
           <Route path='/my-profile'>
             <MyProfilePage />
           </Route>
+          </div>
+
         </div>
       </>
     </ThemeProvider>

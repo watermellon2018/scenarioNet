@@ -12,6 +12,12 @@ import InfoIcon from '@material-ui/icons/Info';
 
 const CreateScenarioPage = () => {
 
+    const history = useHistory();
+
+    const handleCreateCharater = () => {
+        history.push('/create-character');
+    };
+
 
     return (
 
@@ -20,7 +26,11 @@ const CreateScenarioPage = () => {
 
             <WButton icon={<InfoIcon />} title='Информация о фильме'/>
 
-            <WButton icon={<PeopleIcon />} title='Создание персонажей' />
+            <WButton 
+                icon={<PeopleIcon />}
+                title='Создание персонажей'
+                onClick={handleCreateCharater}
+            />
 
             <WButton icon={<CreateIcon />} title='Написание сценария' />
 

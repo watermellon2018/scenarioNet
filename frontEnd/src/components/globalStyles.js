@@ -5,6 +5,20 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     font-family: Tahoma, Helvetica, Arial, Roboto, sans-serif;
     transition: all 0.50s linear;
+
+    .MuiButton-contained {
+        background: ${({ theme }) => theme.thirdColor};
+    }
+
+    .MuiButton-outlined {
+        border: 1px solid ${({ theme }) => theme.thirdColor};
+
+    }
+    
+    .MuiButton-label {
+        color: ${({ theme }) => theme.text};
+    }
+
     .registration__first-row__avatar__wrapper-div {
         border-color: ${({ theme }) => theme.thirdColor};
     }

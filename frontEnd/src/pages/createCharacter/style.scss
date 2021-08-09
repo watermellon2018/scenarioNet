@@ -1,0 +1,43 @@
+.create-character {
+    display: flex;
+    height: 100%;
+
+    &__dispay-character {
+        width: 100%;
+        margin-right: 10px;
+
+        & .MuiCard-root {
+            position: relative;
+            height: calc(100% - 20px);
+            padding: 10px 5px;
+        }
+
+        & .MuiCardActionArea-root {
+            height: calc(100% - 50px);
+            
+        }
+
+        & .MuiCardMedia-img{
+            height: 100%;
+        }
+
+        & .MuiCardActions-spacing{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 60px;
+            padding: 0 5px !important;
+        }
+
+    }
+
+    &__setting {
+        width: 50%;
+        border: 1px solid blue;
+
+    }
+}
+
+.box-wrapper {
+    padding: 5px;
+}
