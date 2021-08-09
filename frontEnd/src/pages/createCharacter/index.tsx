@@ -8,9 +8,10 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
 
-
 import './style.scss';
 
+
+// TODO:: боковая скрытая панель для настройки генерации
 const CreateCharacterPage = () => {
 
     const handleGenerate = () => {
