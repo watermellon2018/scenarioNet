@@ -22,6 +22,10 @@ const MenuPage = () => {
         history.push('/my-profile');
     }
 
+    const handleCreateScenario = () => {
+        history.push('/create-scenario');
+    }
+
     return (
 
 
@@ -31,7 +35,11 @@ const MenuPage = () => {
 
             <WButton icon={<BuildIcon />} title='Создание фильма' />
 
-            <WButton icon={<CreateIcon />} title='Создание сценария' />
+            <WButton 
+                icon={<CreateIcon />} 
+                title='Создание сценария'
+                onClick={handleCreateScenario}
+            />
 
             <WButton icon={<VideoLibraryIcon />} title='Моя библиотека' />
 
